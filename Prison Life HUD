@@ -1,0 +1,1633 @@
+-- Dee's Console Script
+local Converted = {
+	["_DeesConsole"] = Instance.new("ScreenGui");
+	["_SFX"] = Instance.new("LocalScript");
+	["_OpenButton"] = Instance.new("TextButton");
+	["_UICorner"] = Instance.new("UICorner");
+	["_UIStroke"] = Instance.new("UIStroke");
+	["_UIScale"] = Instance.new("UIScale");
+	["_UIAspectRatioConstraint"] = Instance.new("UIAspectRatioConstraint");
+	["_Moveable"] = Instance.new("LocalScript");
+	["_UIStroke1"] = Instance.new("UIStroke");
+	["_Functionality"] = Instance.new("LocalScript");
+	["_Background"] = Instance.new("TextButton");
+	["_Title"] = Instance.new("TextLabel");
+	["_UIStroke2"] = Instance.new("UIStroke");
+	["_CloseGUI"] = Instance.new("TextButton");
+	["_UIStroke3"] = Instance.new("UIStroke");
+	["_UIScale1"] = Instance.new("UIScale");
+	["_Functionality1"] = Instance.new("LocalScript");
+	["_UIAspectRatioConstraint1"] = Instance.new("UIAspectRatioConstraint");
+	["_Moveable1"] = Instance.new("LocalScript");
+	["_UIStroke4"] = Instance.new("UIStroke");
+	["_UIScale2"] = Instance.new("UIScale");
+	["_UICorner1"] = Instance.new("UICorner");
+	["_UIAspectRatioConstraint2"] = Instance.new("UIAspectRatioConstraint");
+	["_Shading"] = Instance.new("Frame");
+	["_UIScale3"] = Instance.new("UIScale");
+	["_UICorner2"] = Instance.new("UICorner");
+	["_FunctionFrame"] = Instance.new("ScrollingFrame");
+	["_UICorner3"] = Instance.new("UICorner");
+	["_GUIHolder"] = Instance.new("Frame");
+	["_UIListLayout"] = Instance.new("UIListLayout");
+	["_Divider"] = Instance.new("Frame");
+	["_UICorner4"] = Instance.new("UICorner");
+	["_UIStroke5"] = Instance.new("UIStroke");
+	["_SectionsHolder"] = Instance.new("Frame");
+	["_UIListLayout1"] = Instance.new("UIListLayout");
+	["_Player"] = Instance.new("TextButton");
+	["_UICorner5"] = Instance.new("UICorner");
+	["_UIStroke6"] = Instance.new("UIStroke");
+	["_UIStroke7"] = Instance.new("UIStroke");
+	["_UIScale4"] = Instance.new("UIScale");
+	["_Items"] = Instance.new("TextButton");
+	["_UICorner6"] = Instance.new("UICorner");
+	["_UIStroke8"] = Instance.new("UIStroke");
+	["_UIStroke9"] = Instance.new("UIStroke");
+	["_UIScale5"] = Instance.new("UIScale");
+	["_Status"] = Instance.new("TextButton");
+	["_UICorner7"] = Instance.new("UICorner");
+	["_UIStroke10"] = Instance.new("UIStroke");
+	["_UIStroke11"] = Instance.new("UIStroke");
+	["_UIScale6"] = Instance.new("UIScale");
+	["_Settings"] = Instance.new("TextButton");
+	["_UICorner8"] = Instance.new("UICorner");
+	["_UIStroke12"] = Instance.new("UIStroke");
+	["_UIStroke13"] = Instance.new("UIStroke");
+	["_UIScale7"] = Instance.new("UIScale");
+	["_Visuals"] = Instance.new("TextButton");
+	["_UICorner9"] = Instance.new("UICorner");
+	["_UIStroke14"] = Instance.new("UIStroke");
+	["_UIStroke15"] = Instance.new("UIStroke");
+	["_UIScale8"] = Instance.new("UIScale");
+	["_Modifications"] = Instance.new("TextButton");
+	["_UICorner10"] = Instance.new("UICorner");
+	["_UIStroke16"] = Instance.new("UIStroke");
+	["_UIStroke17"] = Instance.new("UIStroke");
+	["_UIScale9"] = Instance.new("UIScale");
+	["_PVP"] = Instance.new("TextButton");
+	["_UICorner11"] = Instance.new("UICorner");
+	["_UIStroke18"] = Instance.new("UIStroke");
+	["_UIStroke19"] = Instance.new("UIStroke");
+	["_UIScale10"] = Instance.new("UIScale");
+	["_Functionality2"] = Instance.new("LocalScript");
+	["_Player1"] = Instance.new("Folder");
+	["_TeleportPrison"] = Instance.new("TextButton");
+	["_UIScale11"] = Instance.new("UIScale");
+	["_UIStroke20"] = Instance.new("UIStroke");
+	["_UIStroke21"] = Instance.new("UIStroke");
+	["_UICorner12"] = Instance.new("UICorner");
+	["_TeleportPrison1"] = Instance.new("LocalScript");
+	["_TeleportCafeteria"] = Instance.new("TextButton");
+	["_UIScale12"] = Instance.new("UIScale");
+	["_UIStroke22"] = Instance.new("UIStroke");
+	["_UIStroke23"] = Instance.new("UIStroke");
+	["_UICorner13"] = Instance.new("UICorner");
+	["_TeleportCafeteria1"] = Instance.new("LocalScript");
+	["_TeleportCriminal"] = Instance.new("TextButton");
+	["_UIScale13"] = Instance.new("UIScale");
+	["_UIStroke24"] = Instance.new("UIStroke");
+	["_UIStroke25"] = Instance.new("UIStroke");
+	["_UICorner14"] = Instance.new("UICorner");
+	["_TeleportCriminal1"] = Instance.new("LocalScript");
+	["_TeleportYard"] = Instance.new("TextButton");
+	["_UIScale14"] = Instance.new("UIScale");
+	["_UIStroke26"] = Instance.new("UIStroke");
+	["_UIStroke27"] = Instance.new("UIStroke");
+	["_UICorner15"] = Instance.new("UICorner");
+	["_TeleportYard1"] = Instance.new("LocalScript");
+	["_TeleportGuard"] = Instance.new("TextButton");
+	["_UIScale15"] = Instance.new("UIScale");
+	["_UIStroke28"] = Instance.new("UIStroke");
+	["_UIStroke29"] = Instance.new("UIStroke");
+	["_UICorner16"] = Instance.new("UICorner");
+	["_TeleportGuard1"] = Instance.new("LocalScript");
+	["_CharacterTitle"] = Instance.new("TextLabel");
+	["_UIScale16"] = Instance.new("UIScale");
+	["_UIStroke30"] = Instance.new("UIStroke");
+	["_UICorner17"] = Instance.new("UICorner");
+	["_UIStroke31"] = Instance.new("UIStroke");
+	["_TeleportsTitle"] = Instance.new("TextLabel");
+	["_UIScale17"] = Instance.new("UIScale");
+	["_UIStroke32"] = Instance.new("UIStroke");
+	["_UICorner18"] = Instance.new("UICorner");
+	["_UIStroke33"] = Instance.new("UIStroke");
+	["_JumpHeightChanger"] = Instance.new("TextBox");
+	["_UICorner19"] = Instance.new("UICorner");
+	["_UIScale18"] = Instance.new("UIScale");
+	["_UIStroke34"] = Instance.new("UIStroke");
+	["_UIStroke35"] = Instance.new("UIStroke");
+	["_JumpHeight"] = Instance.new("LocalScript");
+	["_WalkSpeedChanger"] = Instance.new("TextBox");
+	["_UICorner20"] = Instance.new("UICorner");
+	["_UIScale19"] = Instance.new("UIScale");
+	["_UIStroke36"] = Instance.new("UIStroke");
+	["_UIStroke37"] = Instance.new("UIStroke");
+	["_WalkSpeed"] = Instance.new("LocalScript");
+	["_Items1"] = Instance.new("Folder");
+	["_Status1"] = Instance.new("Folder");
+	["_ChangePrisoner"] = Instance.new("TextButton");
+	["_UIScale20"] = Instance.new("UIScale");
+	["_UIStroke38"] = Instance.new("UIStroke");
+	["_UIStroke39"] = Instance.new("UIStroke");
+	["_UICorner21"] = Instance.new("UICorner");
+	["_TeamPrisoner"] = Instance.new("LocalScript");
+	["_ChangeCriminal"] = Instance.new("TextButton");
+	["_UIScale21"] = Instance.new("UIScale");
+	["_UIStroke40"] = Instance.new("UIStroke");
+	["_UIStroke41"] = Instance.new("UIStroke");
+	["_UICorner22"] = Instance.new("UICorner");
+	["_TeamCriminal"] = Instance.new("LocalScript");
+	["_ChangeGuard"] = Instance.new("TextButton");
+	["_UIScale22"] = Instance.new("UIScale");
+	["_UIStroke42"] = Instance.new("UIStroke");
+	["_UIStroke43"] = Instance.new("UIStroke");
+	["_UICorner23"] = Instance.new("UICorner");
+	["_TeamGuard"] = Instance.new("LocalScript");
+	["_CurrentTeam"] = Instance.new("TextLabel");
+	["_UIScale23"] = Instance.new("UIScale");
+	["_UIStroke44"] = Instance.new("UIStroke");
+	["_UICorner24"] = Instance.new("UICorner");
+	["_UIStroke45"] = Instance.new("UIStroke");
+	["_Team"] = Instance.new("TextLabel");
+	["_UIScale24"] = Instance.new("UIScale");
+	["_UIStroke46"] = Instance.new("UIStroke");
+	["_UICorner25"] = Instance.new("UICorner");
+	["_UIStroke47"] = Instance.new("UIStroke");
+	["_TimeTitle"] = Instance.new("TextLabel");
+	["_UIScale25"] = Instance.new("UIScale");
+	["_UIStroke48"] = Instance.new("UIStroke");
+	["_UICorner26"] = Instance.new("UICorner");
+	["_UIStroke49"] = Instance.new("UIStroke");
+	["_CurrentEvent"] = Instance.new("TextLabel");
+	["_UIScale26"] = Instance.new("UIScale");
+	["_UIStroke50"] = Instance.new("UIStroke");
+	["_UICorner27"] = Instance.new("UICorner");
+	["_UIStroke51"] = Instance.new("UIStroke");
+	["_Clock"] = Instance.new("TextLabel");
+	["_UIScale27"] = Instance.new("UIScale");
+	["_UIStroke52"] = Instance.new("UIStroke");
+	["_UICorner28"] = Instance.new("UICorner");
+	["_UIStroke53"] = Instance.new("UIStroke");
+	["_Settings1"] = Instance.new("Folder");
+	["_Modifications1"] = Instance.new("Folder");
+	["_Visuals1"] = Instance.new("Folder");
+	["_PVP1"] = Instance.new("Folder");
+	["_Click"] = Instance.new("Sound");
+	["_Select"] = Instance.new("Sound");
+}
+
+-- Properties:
+
+Converted["_DeesConsole"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_DeesConsole"].Name = "DeesConsole"
+Converted["_DeesConsole"].Parent = game:GetService("CoreGui")
+
+Converted["_OpenButton"].Font = Enum.Font.SourceSansBold
+Converted["_OpenButton"].Text = "Dee's Console"
+Converted["_OpenButton"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_OpenButton"].TextScaled = true
+Converted["_OpenButton"].TextSize = 14
+Converted["_OpenButton"].TextWrapped = true
+Converted["_OpenButton"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_OpenButton"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_OpenButton"].BackgroundTransparency = 0.5
+Converted["_OpenButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_OpenButton"].BorderSizePixel = 0
+Converted["_OpenButton"].Position = UDim2.new(0.251731426, 0, 0.303066134, 0)
+Converted["_OpenButton"].Size = UDim2.new(0.0415540524, 0, 0.0792561918, 0)
+Converted["_OpenButton"].Name = "OpenButton"
+Converted["_OpenButton"].Parent = Converted["_DeesConsole"]
+
+Converted["_UICorner"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner"].Parent = Converted["_OpenButton"]
+
+Converted["_UIStroke"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke"].Parent = Converted["_OpenButton"]
+
+Converted["_UIScale"].Parent = Converted["_OpenButton"]
+
+Converted["_UIAspectRatioConstraint"].Parent = Converted["_OpenButton"]
+
+Converted["_UIStroke1"].Parent = Converted["_OpenButton"]
+
+Converted["_Background"].Font = Enum.Font.SourceSans
+Converted["_Background"].Text = ""
+Converted["_Background"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Background"].TextSize = 14
+Converted["_Background"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Background"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Background"].BackgroundTransparency = 0.5
+Converted["_Background"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Background"].BorderSizePixel = 0
+Converted["_Background"].Position = UDim2.new(0.499148607, 0, 0.499603301, 0)
+Converted["_Background"].Size = UDim2.new(0.421999991, 0, 0.495999992, 0)
+Converted["_Background"].Name = "Background"
+Converted["_Background"].Parent = Converted["_DeesConsole"]
+
+Converted["_Title"].Font = Enum.Font.SourceSansBold
+Converted["_Title"].Text = "Dee's Console"
+Converted["_Title"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title"].TextScaled = true
+Converted["_Title"].TextSize = 14
+Converted["_Title"].TextWrapped = true
+Converted["_Title"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Title"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title"].BackgroundTransparency = 1
+Converted["_Title"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Title"].BorderSizePixel = 0
+Converted["_Title"].Position = UDim2.new(0.042857144, 0, 0, 0)
+Converted["_Title"].Size = UDim2.new(0.95714283, 0, 0.075000003, 0)
+Converted["_Title"].Name = "Title"
+Converted["_Title"].Parent = Converted["_Background"]
+
+Converted["_UIStroke2"].Parent = Converted["_Title"]
+
+Converted["_CloseGUI"].Font = Enum.Font.SourceSans
+Converted["_CloseGUI"].Text = "X"
+Converted["_CloseGUI"].TextColor3 = Color3.fromRGB(0, 115.00000074505806, 255)
+Converted["_CloseGUI"].TextScaled = true
+Converted["_CloseGUI"].TextSize = 14
+Converted["_CloseGUI"].TextWrapped = true
+Converted["_CloseGUI"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_CloseGUI"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_CloseGUI"].BackgroundTransparency = 1
+Converted["_CloseGUI"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_CloseGUI"].BorderSizePixel = 0
+Converted["_CloseGUI"].Position = UDim2.new(0.993576705, 0, 0.0356250033, 0)
+Converted["_CloseGUI"].Size = UDim2.new(0.122857146, 0, 0.200000003, 0)
+Converted["_CloseGUI"].ZIndex = 2
+Converted["_CloseGUI"].Name = "CloseGUI"
+Converted["_CloseGUI"].Parent = Converted["_Background"]
+
+Converted["_UIStroke3"].Parent = Converted["_CloseGUI"]
+
+Converted["_UIScale1"].Parent = Converted["_CloseGUI"]
+
+Converted["_UIAspectRatioConstraint1"].Parent = Converted["_CloseGUI"]
+
+Converted["_UIStroke4"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke4"].Thickness = 2
+Converted["_UIStroke4"].Parent = Converted["_Background"]
+
+Converted["_UIScale2"].Parent = Converted["_Background"]
+
+Converted["_UICorner1"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner1"].Parent = Converted["_Background"]
+
+Converted["_UIAspectRatioConstraint2"].AspectRatio = 1.75
+Converted["_UIAspectRatioConstraint2"].Parent = Converted["_Background"]
+
+Converted["_Shading"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Shading"].BackgroundTransparency = 0.5999999642372131
+Converted["_Shading"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Shading"].BorderSizePixel = 0
+Converted["_Shading"].Position = UDim2.new(0, 0, 0.075000003, 0)
+Converted["_Shading"].Size = UDim2.new(1, 0, 0.925000012, 0)
+Converted["_Shading"].Name = "Shading"
+Converted["_Shading"].Parent = Converted["_Background"]
+
+Converted["_UIScale3"].Parent = Converted["_Shading"]
+
+Converted["_UICorner2"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner2"].Parent = Converted["_Shading"]
+
+Converted["_FunctionFrame"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_FunctionFrame"].ScrollBarThickness = 8
+Converted["_FunctionFrame"].Active = true
+Converted["_FunctionFrame"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_FunctionFrame"].BackgroundTransparency = 1
+Converted["_FunctionFrame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_FunctionFrame"].BorderSizePixel = 0
+Converted["_FunctionFrame"].Position = UDim2.new(0.292499989, 0, 0.0452703275, 0)
+Converted["_FunctionFrame"].Size = UDim2.new(0.684999943, 0, 0.954729676, 0)
+Converted["_FunctionFrame"].Name = "FunctionFrame"
+Converted["_FunctionFrame"].Parent = Converted["_Shading"]
+
+Converted["_UICorner3"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner3"].Parent = Converted["_FunctionFrame"]
+
+Converted["_GUIHolder"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_GUIHolder"].BackgroundTransparency = 1
+Converted["_GUIHolder"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_GUIHolder"].BorderSizePixel = 0
+Converted["_GUIHolder"].Position = UDim2.new(-1.11378021e-07, 0, 0, 0)
+Converted["_GUIHolder"].Size = UDim2.new(0.962499678, 0, 2.09483385, 0)
+Converted["_GUIHolder"].Name = "GUIHolder"
+Converted["_GUIHolder"].Parent = Converted["_FunctionFrame"]
+
+Converted["_UIListLayout"].Padding = UDim.new(0.00749999983, 0)
+Converted["_UIListLayout"].HorizontalAlignment = Enum.HorizontalAlignment.Center
+Converted["_UIListLayout"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout"].Parent = Converted["_GUIHolder"]
+
+Converted["_Divider"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Divider"].BackgroundColor3 = Color3.fromRGB(0, 115.00000074505806, 255)
+Converted["_Divider"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Divider"].BorderSizePixel = 0
+Converted["_Divider"].Position = UDim2.new(0.274999976, 0, 0.495270312, 0)
+Converted["_Divider"].Size = UDim2.new(0.00999999978, 0, 0.899999976, 0)
+Converted["_Divider"].Name = "Divider"
+Converted["_Divider"].Parent = Converted["_Shading"]
+
+Converted["_UICorner4"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner4"].Parent = Converted["_Divider"]
+
+Converted["_UIStroke5"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke5"].Parent = Converted["_Divider"]
+
+Converted["_SectionsHolder"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_SectionsHolder"].BackgroundTransparency = 1
+Converted["_SectionsHolder"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_SectionsHolder"].BorderSizePixel = 0
+Converted["_SectionsHolder"].Position = UDim2.new(0.0149999987, 0, 0.0499999858, 0)
+Converted["_SectionsHolder"].Size = UDim2.new(0.249999985, 0, 0.950000107, 0)
+Converted["_SectionsHolder"].Name = "SectionsHolder"
+Converted["_SectionsHolder"].Parent = Converted["_Shading"]
+
+Converted["_UIListLayout1"].Padding = UDim.new(0.0299999993, 0)
+Converted["_UIListLayout1"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout1"].Parent = Converted["_SectionsHolder"]
+
+Converted["_Player"].Font = Enum.Font.SourceSans
+Converted["_Player"].Text = "Player"
+Converted["_Player"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Player"].TextScaled = true
+Converted["_Player"].TextSize = 14
+Converted["_Player"].TextWrapped = true
+Converted["_Player"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Player"].BackgroundColor3 = Color3.fromRGB(0, 115.00000074505806, 255)
+Converted["_Player"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Player"].BorderSizePixel = 0
+Converted["_Player"].LayoutOrder = 1
+Converted["_Player"].Position = UDim2.new(0.449999988, 0, 0.0535450131, 0)
+Converted["_Player"].SelectionOrder = 5
+Converted["_Player"].Size = UDim2.new(0.899999976, 0, 0.107089721, 0)
+Converted["_Player"].Name = "Player"
+Converted["_Player"].Parent = Converted["_SectionsHolder"]
+
+Converted["_UICorner5"].Parent = Converted["_Player"]
+
+Converted["_UIStroke6"].Parent = Converted["_Player"]
+
+Converted["_UIStroke7"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke7"].Parent = Converted["_Player"]
+
+Converted["_UIScale4"].Parent = Converted["_Player"]
+
+Converted["_Items"].Font = Enum.Font.SourceSans
+Converted["_Items"].Text = "Items"
+Converted["_Items"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Items"].TextScaled = true
+Converted["_Items"].TextSize = 14
+Converted["_Items"].TextWrapped = true
+Converted["_Items"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Items"].BackgroundColor3 = Color3.fromRGB(0, 115.00000074505806, 255)
+Converted["_Items"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Items"].BorderSizePixel = 0
+Converted["_Items"].LayoutOrder = 6
+Converted["_Items"].Position = UDim2.new(0.449999988, 0, 0.610411704, 0)
+Converted["_Items"].Size = UDim2.new(0.899999976, 0, 0.10708978, 0)
+Converted["_Items"].Name = "Items"
+Converted["_Items"].Parent = Converted["_SectionsHolder"]
+
+Converted["_UICorner6"].Parent = Converted["_Items"]
+
+Converted["_UIStroke8"].Parent = Converted["_Items"]
+
+Converted["_UIStroke9"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke9"].Parent = Converted["_Items"]
+
+Converted["_UIScale5"].Parent = Converted["_Items"]
+
+Converted["_Status"].Font = Enum.Font.SourceSans
+Converted["_Status"].Text = "Status"
+Converted["_Status"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Status"].TextScaled = true
+Converted["_Status"].TextSize = 14
+Converted["_Status"].TextWrapped = true
+Converted["_Status"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Status"].BackgroundColor3 = Color3.fromRGB(0, 115.00000074505806, 255)
+Converted["_Status"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Status"].BorderSizePixel = 0
+Converted["_Status"].LayoutOrder = 2
+Converted["_Status"].Position = UDim2.new(0.449999988, 0, 0.192761734, 0)
+Converted["_Status"].Size = UDim2.new(0.899999976, 0, 0.107089736, 0)
+Converted["_Status"].Name = "Status"
+Converted["_Status"].Parent = Converted["_SectionsHolder"]
+
+Converted["_UICorner7"].Parent = Converted["_Status"]
+
+Converted["_UIStroke10"].Parent = Converted["_Status"]
+
+Converted["_UIStroke11"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke11"].Parent = Converted["_Status"]
+
+Converted["_UIScale6"].Parent = Converted["_Status"]
+
+Converted["_Settings"].Font = Enum.Font.SourceSans
+Converted["_Settings"].Text = "Settings"
+Converted["_Settings"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Settings"].TextScaled = true
+Converted["_Settings"].TextSize = 14
+Converted["_Settings"].TextWrapped = true
+Converted["_Settings"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Settings"].BackgroundColor3 = Color3.fromRGB(0, 115.00000074505806, 255)
+Converted["_Settings"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Settings"].BorderSizePixel = 0
+Converted["_Settings"].LayoutOrder = 3
+Converted["_Settings"].Position = UDim2.new(0.449999988, 0, 0.33197841, 0)
+Converted["_Settings"].Size = UDim2.new(0.899999976, 0, 0.10708978, 0)
+Converted["_Settings"].Name = "Settings"
+Converted["_Settings"].Parent = Converted["_SectionsHolder"]
+
+Converted["_UICorner8"].Parent = Converted["_Settings"]
+
+Converted["_UIStroke12"].Parent = Converted["_Settings"]
+
+Converted["_UIStroke13"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke13"].Parent = Converted["_Settings"]
+
+Converted["_UIScale7"].Parent = Converted["_Settings"]
+
+Converted["_Visuals"].Font = Enum.Font.SourceSans
+Converted["_Visuals"].Text = "Visuals"
+Converted["_Visuals"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Visuals"].TextScaled = true
+Converted["_Visuals"].TextSize = 14
+Converted["_Visuals"].TextWrapped = true
+Converted["_Visuals"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Visuals"].BackgroundColor3 = Color3.fromRGB(0, 115.00000074505806, 255)
+Converted["_Visuals"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Visuals"].BorderSizePixel = 0
+Converted["_Visuals"].LayoutOrder = 4
+Converted["_Visuals"].Position = UDim2.new(0.449999988, 0, 0.471194953, 0)
+Converted["_Visuals"].Size = UDim2.new(0.899999976, 0, 0.10708978, 0)
+Converted["_Visuals"].Name = "Visuals"
+Converted["_Visuals"].Parent = Converted["_SectionsHolder"]
+
+Converted["_UICorner9"].Parent = Converted["_Visuals"]
+
+Converted["_UIStroke14"].Parent = Converted["_Visuals"]
+
+Converted["_UIStroke15"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke15"].Parent = Converted["_Visuals"]
+
+Converted["_UIScale8"].Parent = Converted["_Visuals"]
+
+Converted["_Modifications"].Font = Enum.Font.SourceSans
+Converted["_Modifications"].Text = "Modifications"
+Converted["_Modifications"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Modifications"].TextScaled = true
+Converted["_Modifications"].TextSize = 14
+Converted["_Modifications"].TextWrapped = true
+Converted["_Modifications"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Modifications"].BackgroundColor3 = Color3.fromRGB(0, 115.00000074505806, 255)
+Converted["_Modifications"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Modifications"].BorderSizePixel = 0
+Converted["_Modifications"].LayoutOrder = 7
+Converted["_Modifications"].Position = UDim2.new(0.449999988, 0, 0.888844848, 0)
+Converted["_Modifications"].SelectionOrder = 1
+Converted["_Modifications"].Size = UDim2.new(0.899999976, 0, 0.107089855, 0)
+Converted["_Modifications"].Name = "Modifications"
+Converted["_Modifications"].Parent = Converted["_SectionsHolder"]
+
+Converted["_UICorner10"].Parent = Converted["_Modifications"]
+
+Converted["_UIStroke16"].Parent = Converted["_Modifications"]
+
+Converted["_UIStroke17"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke17"].Parent = Converted["_Modifications"]
+
+Converted["_UIScale9"].Parent = Converted["_Modifications"]
+
+Converted["_PVP"].Font = Enum.Font.SourceSans
+Converted["_PVP"].Text = "PVP"
+Converted["_PVP"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_PVP"].TextScaled = true
+Converted["_PVP"].TextSize = 14
+Converted["_PVP"].TextWrapped = true
+Converted["_PVP"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_PVP"].BackgroundColor3 = Color3.fromRGB(0, 115.00000074505806, 255)
+Converted["_PVP"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_PVP"].BorderSizePixel = 0
+Converted["_PVP"].LayoutOrder = 5
+Converted["_PVP"].Position = UDim2.new(0.449999988, 0, 0.749628067, 0)
+Converted["_PVP"].Size = UDim2.new(0.899999976, 0, 0.107089698, 0)
+Converted["_PVP"].Name = "PVP"
+Converted["_PVP"].Parent = Converted["_SectionsHolder"]
+
+Converted["_UICorner11"].Parent = Converted["_PVP"]
+
+Converted["_UIStroke18"].Parent = Converted["_PVP"]
+
+Converted["_UIStroke19"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke19"].Parent = Converted["_PVP"]
+
+Converted["_UIScale10"].Parent = Converted["_PVP"]
+
+Converted["_Player1"].Name = "Player"
+Converted["_Player1"].Parent = Converted["_Shading"]
+
+Converted["_TeleportPrison"].Font = Enum.Font.SourceSans
+Converted["_TeleportPrison"].Text = "Prison Cells"
+Converted["_TeleportPrison"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TeleportPrison"].TextScaled = true
+Converted["_TeleportPrison"].TextSize = 14
+Converted["_TeleportPrison"].TextWrapped = true
+Converted["_TeleportPrison"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TeleportPrison"].BackgroundTransparency = 0.949999988079071
+Converted["_TeleportPrison"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TeleportPrison"].BorderSizePixel = 0
+Converted["_TeleportPrison"].LayoutOrder = 5
+Converted["_TeleportPrison"].Position = UDim2.new(0.037499886, 0, 0.129006803, 0)
+Converted["_TeleportPrison"].Size = UDim2.new(0.925000012, 0, 0.014496603, 0)
+Converted["_TeleportPrison"].Visible = false
+Converted["_TeleportPrison"].Name = "TeleportPrison"
+Converted["_TeleportPrison"].Parent = Converted["_Player1"]
+
+Converted["_UIScale11"].Parent = Converted["_TeleportPrison"]
+
+Converted["_UIStroke20"].Parent = Converted["_TeleportPrison"]
+
+Converted["_UIStroke21"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke21"].Parent = Converted["_TeleportPrison"]
+
+Converted["_UICorner12"].Parent = Converted["_TeleportPrison"]
+
+Converted["_TeleportCafeteria"].Font = Enum.Font.SourceSans
+Converted["_TeleportCafeteria"].Text = "Cafeteria/Food Court"
+Converted["_TeleportCafeteria"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TeleportCafeteria"].TextScaled = true
+Converted["_TeleportCafeteria"].TextSize = 14
+Converted["_TeleportCafeteria"].TextWrapped = true
+Converted["_TeleportCafeteria"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TeleportCafeteria"].BackgroundTransparency = 0.949999988079071
+Converted["_TeleportCafeteria"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TeleportCafeteria"].BorderSizePixel = 0
+Converted["_TeleportCafeteria"].LayoutOrder = 6
+Converted["_TeleportCafeteria"].Position = UDim2.new(0.037499886, 0, 0.129006803, 0)
+Converted["_TeleportCafeteria"].Size = UDim2.new(0.925000012, 0, 0.014496603, 0)
+Converted["_TeleportCafeteria"].Visible = false
+Converted["_TeleportCafeteria"].Name = "TeleportCafeteria"
+Converted["_TeleportCafeteria"].Parent = Converted["_Player1"]
+
+Converted["_UIScale12"].Parent = Converted["_TeleportCafeteria"]
+
+Converted["_UIStroke22"].Parent = Converted["_TeleportCafeteria"]
+
+Converted["_UIStroke23"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke23"].Parent = Converted["_TeleportCafeteria"]
+
+Converted["_UICorner13"].Parent = Converted["_TeleportCafeteria"]
+
+Converted["_TeleportCriminal"].Font = Enum.Font.SourceSans
+Converted["_TeleportCriminal"].Text = "Criminal Base"
+Converted["_TeleportCriminal"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TeleportCriminal"].TextScaled = true
+Converted["_TeleportCriminal"].TextSize = 14
+Converted["_TeleportCriminal"].TextWrapped = true
+Converted["_TeleportCriminal"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TeleportCriminal"].BackgroundTransparency = 0.949999988079071
+Converted["_TeleportCriminal"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TeleportCriminal"].BorderSizePixel = 0
+Converted["_TeleportCriminal"].LayoutOrder = 9
+Converted["_TeleportCriminal"].Position = UDim2.new(0.037499886, 0, 0.129006803, 0)
+Converted["_TeleportCriminal"].Size = UDim2.new(0.925000012, 0, 0.014496603, 0)
+Converted["_TeleportCriminal"].Visible = false
+Converted["_TeleportCriminal"].Name = "TeleportCriminal"
+Converted["_TeleportCriminal"].Parent = Converted["_Player1"]
+
+Converted["_UIScale13"].Parent = Converted["_TeleportCriminal"]
+
+Converted["_UIStroke24"].Parent = Converted["_TeleportCriminal"]
+
+Converted["_UIStroke25"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke25"].Parent = Converted["_TeleportCriminal"]
+
+Converted["_UICorner14"].Parent = Converted["_TeleportCriminal"]
+
+Converted["_TeleportYard"].Font = Enum.Font.SourceSans
+Converted["_TeleportYard"].Text = "Prison Yard"
+Converted["_TeleportYard"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TeleportYard"].TextScaled = true
+Converted["_TeleportYard"].TextSize = 14
+Converted["_TeleportYard"].TextWrapped = true
+Converted["_TeleportYard"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TeleportYard"].BackgroundTransparency = 0.949999988079071
+Converted["_TeleportYard"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TeleportYard"].BorderSizePixel = 0
+Converted["_TeleportYard"].LayoutOrder = 7
+Converted["_TeleportYard"].Position = UDim2.new(0.037499886, 0, 0.129006803, 0)
+Converted["_TeleportYard"].Size = UDim2.new(0.925000012, 0, 0.014496603, 0)
+Converted["_TeleportYard"].Visible = false
+Converted["_TeleportYard"].Name = "TeleportYard"
+Converted["_TeleportYard"].Parent = Converted["_Player1"]
+
+Converted["_UIScale14"].Parent = Converted["_TeleportYard"]
+
+Converted["_UIStroke26"].Parent = Converted["_TeleportYard"]
+
+Converted["_UIStroke27"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke27"].Parent = Converted["_TeleportYard"]
+
+Converted["_UICorner15"].Parent = Converted["_TeleportYard"]
+
+Converted["_TeleportGuard"].Font = Enum.Font.SourceSans
+Converted["_TeleportGuard"].Text = "Guard Lounge"
+Converted["_TeleportGuard"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TeleportGuard"].TextScaled = true
+Converted["_TeleportGuard"].TextSize = 14
+Converted["_TeleportGuard"].TextWrapped = true
+Converted["_TeleportGuard"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TeleportGuard"].BackgroundTransparency = 0.949999988079071
+Converted["_TeleportGuard"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TeleportGuard"].BorderSizePixel = 0
+Converted["_TeleportGuard"].LayoutOrder = 8
+Converted["_TeleportGuard"].Position = UDim2.new(0.037499886, 0, 0.129006803, 0)
+Converted["_TeleportGuard"].Size = UDim2.new(0.925000012, 0, 0.014496603, 0)
+Converted["_TeleportGuard"].Visible = false
+Converted["_TeleportGuard"].Name = "TeleportGuard"
+Converted["_TeleportGuard"].Parent = Converted["_Player1"]
+
+Converted["_UIScale15"].Parent = Converted["_TeleportGuard"]
+
+Converted["_UIStroke28"].Parent = Converted["_TeleportGuard"]
+
+Converted["_UIStroke29"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke29"].Parent = Converted["_TeleportGuard"]
+
+Converted["_UICorner16"].Parent = Converted["_TeleportGuard"]
+
+Converted["_CharacterTitle"].Font = Enum.Font.SourceSansBold
+Converted["_CharacterTitle"].Text = "Character"
+Converted["_CharacterTitle"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_CharacterTitle"].TextScaled = true
+Converted["_CharacterTitle"].TextSize = 14
+Converted["_CharacterTitle"].TextWrapped = true
+Converted["_CharacterTitle"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_CharacterTitle"].BackgroundTransparency = 0.949999988079071
+Converted["_CharacterTitle"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_CharacterTitle"].BorderSizePixel = 0
+Converted["_CharacterTitle"].Position = UDim2.new(0.037499886, 0, 0, 0)
+Converted["_CharacterTitle"].Size = UDim2.new(0.925000012, 0, 0.0175033994, 0)
+Converted["_CharacterTitle"].Visible = false
+Converted["_CharacterTitle"].Name = "CharacterTitle"
+Converted["_CharacterTitle"].Parent = Converted["_Player1"]
+
+Converted["_UIScale16"].Parent = Converted["_CharacterTitle"]
+
+Converted["_UIStroke30"].Parent = Converted["_CharacterTitle"]
+
+Converted["_UICorner17"].Parent = Converted["_CharacterTitle"]
+
+Converted["_UIStroke31"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke31"].Parent = Converted["_CharacterTitle"]
+
+Converted["_TeleportsTitle"].Font = Enum.Font.SourceSansBold
+Converted["_TeleportsTitle"].Text = "Teleports"
+Converted["_TeleportsTitle"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TeleportsTitle"].TextScaled = true
+Converted["_TeleportsTitle"].TextSize = 14
+Converted["_TeleportsTitle"].TextWrapped = true
+Converted["_TeleportsTitle"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TeleportsTitle"].BackgroundTransparency = 0.949999988079071
+Converted["_TeleportsTitle"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TeleportsTitle"].BorderSizePixel = 0
+Converted["_TeleportsTitle"].LayoutOrder = 4
+Converted["_TeleportsTitle"].Position = UDim2.new(0.037499886, 0, 0, 0)
+Converted["_TeleportsTitle"].Size = UDim2.new(0.925000012, 0, 0.0175033994, 0)
+Converted["_TeleportsTitle"].Visible = false
+Converted["_TeleportsTitle"].Name = "TeleportsTitle"
+Converted["_TeleportsTitle"].Parent = Converted["_Player1"]
+
+Converted["_UIScale17"].Parent = Converted["_TeleportsTitle"]
+
+Converted["_UIStroke32"].Parent = Converted["_TeleportsTitle"]
+
+Converted["_UICorner18"].Parent = Converted["_TeleportsTitle"]
+
+Converted["_UIStroke33"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke33"].Parent = Converted["_TeleportsTitle"]
+
+Converted["_JumpHeightChanger"].Font = Enum.Font.SourceSans
+Converted["_JumpHeightChanger"].PlaceholderText = "Input your jump height here"
+Converted["_JumpHeightChanger"].Text = ""
+Converted["_JumpHeightChanger"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_JumpHeightChanger"].TextScaled = true
+Converted["_JumpHeightChanger"].TextSize = 14
+Converted["_JumpHeightChanger"].TextWrapped = true
+Converted["_JumpHeightChanger"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_JumpHeightChanger"].BackgroundTransparency = 0.949999988079071
+Converted["_JumpHeightChanger"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_JumpHeightChanger"].BorderSizePixel = 0
+Converted["_JumpHeightChanger"].LayoutOrder = 2
+Converted["_JumpHeightChanger"].Size = UDim2.new(0.925000012, 0, 0.0320000015, 0)
+Converted["_JumpHeightChanger"].Visible = false
+Converted["_JumpHeightChanger"].Name = "JumpHeightChanger"
+Converted["_JumpHeightChanger"].Parent = Converted["_Player1"]
+
+Converted["_UICorner19"].Parent = Converted["_JumpHeightChanger"]
+
+Converted["_UIScale18"].Parent = Converted["_JumpHeightChanger"]
+
+Converted["_UIStroke34"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke34"].Parent = Converted["_JumpHeightChanger"]
+
+Converted["_UIStroke35"].Parent = Converted["_JumpHeightChanger"]
+
+Converted["_WalkSpeedChanger"].Font = Enum.Font.SourceSans
+Converted["_WalkSpeedChanger"].PlaceholderText = "Input your walk speed here"
+Converted["_WalkSpeedChanger"].Text = ""
+Converted["_WalkSpeedChanger"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_WalkSpeedChanger"].TextScaled = true
+Converted["_WalkSpeedChanger"].TextSize = 14
+Converted["_WalkSpeedChanger"].TextWrapped = true
+Converted["_WalkSpeedChanger"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_WalkSpeedChanger"].BackgroundTransparency = 0.949999988079071
+Converted["_WalkSpeedChanger"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_WalkSpeedChanger"].BorderSizePixel = 0
+Converted["_WalkSpeedChanger"].LayoutOrder = 1
+Converted["_WalkSpeedChanger"].Size = UDim2.new(0.925000012, 0, 0.0320000015, 0)
+Converted["_WalkSpeedChanger"].Visible = false
+Converted["_WalkSpeedChanger"].Name = "WalkSpeedChanger"
+Converted["_WalkSpeedChanger"].Parent = Converted["_Player1"]
+
+Converted["_UICorner20"].Parent = Converted["_WalkSpeedChanger"]
+
+Converted["_UIScale19"].Parent = Converted["_WalkSpeedChanger"]
+
+Converted["_UIStroke36"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke36"].Parent = Converted["_WalkSpeedChanger"]
+
+Converted["_UIStroke37"].Parent = Converted["_WalkSpeedChanger"]
+
+Converted["_Items1"].Name = "Items"
+Converted["_Items1"].Parent = Converted["_Shading"]
+
+Converted["_Status1"].Name = "Status"
+Converted["_Status1"].Parent = Converted["_Shading"]
+
+Converted["_ChangePrisoner"].Font = Enum.Font.SourceSans
+Converted["_ChangePrisoner"].Text = "Become a prisoner!"
+Converted["_ChangePrisoner"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ChangePrisoner"].TextScaled = true
+Converted["_ChangePrisoner"].TextSize = 14
+Converted["_ChangePrisoner"].TextWrapped = true
+Converted["_ChangePrisoner"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ChangePrisoner"].BackgroundTransparency = 0.949999988079071
+Converted["_ChangePrisoner"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ChangePrisoner"].BorderSizePixel = 0
+Converted["_ChangePrisoner"].LayoutOrder = 6
+Converted["_ChangePrisoner"].Position = UDim2.new(0.037499886, 0, 0.129006803, 0)
+Converted["_ChangePrisoner"].Size = UDim2.new(0.925000012, 0, 0.014496603, 0)
+Converted["_ChangePrisoner"].Visible = false
+Converted["_ChangePrisoner"].Name = "ChangePrisoner"
+Converted["_ChangePrisoner"].Parent = Converted["_Status1"]
+
+Converted["_UIScale20"].Parent = Converted["_ChangePrisoner"]
+
+Converted["_UIStroke38"].Parent = Converted["_ChangePrisoner"]
+
+Converted["_UIStroke39"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke39"].Parent = Converted["_ChangePrisoner"]
+
+Converted["_UICorner21"].Parent = Converted["_ChangePrisoner"]
+
+Converted["_ChangeCriminal"].Font = Enum.Font.SourceSans
+Converted["_ChangeCriminal"].Text = "Become a criminal!"
+Converted["_ChangeCriminal"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ChangeCriminal"].TextScaled = true
+Converted["_ChangeCriminal"].TextSize = 14
+Converted["_ChangeCriminal"].TextWrapped = true
+Converted["_ChangeCriminal"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ChangeCriminal"].BackgroundTransparency = 0.949999988079071
+Converted["_ChangeCriminal"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ChangeCriminal"].BorderSizePixel = 0
+Converted["_ChangeCriminal"].LayoutOrder = 8
+Converted["_ChangeCriminal"].Position = UDim2.new(0.037499886, 0, 0.129006803, 0)
+Converted["_ChangeCriminal"].Size = UDim2.new(0.925000012, 0, 0.014496603, 0)
+Converted["_ChangeCriminal"].Visible = false
+Converted["_ChangeCriminal"].Name = "ChangeCriminal"
+Converted["_ChangeCriminal"].Parent = Converted["_Status1"]
+
+Converted["_UIScale21"].Parent = Converted["_ChangeCriminal"]
+
+Converted["_UIStroke40"].Parent = Converted["_ChangeCriminal"]
+
+Converted["_UIStroke41"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke41"].Parent = Converted["_ChangeCriminal"]
+
+Converted["_UICorner22"].Parent = Converted["_ChangeCriminal"]
+
+Converted["_ChangeGuard"].Font = Enum.Font.SourceSans
+Converted["_ChangeGuard"].Text = "Enroll as a guard!"
+Converted["_ChangeGuard"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ChangeGuard"].TextScaled = true
+Converted["_ChangeGuard"].TextSize = 14
+Converted["_ChangeGuard"].TextWrapped = true
+Converted["_ChangeGuard"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ChangeGuard"].BackgroundTransparency = 0.949999988079071
+Converted["_ChangeGuard"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ChangeGuard"].BorderSizePixel = 0
+Converted["_ChangeGuard"].LayoutOrder = 7
+Converted["_ChangeGuard"].Position = UDim2.new(0.037499886, 0, 0.129006803, 0)
+Converted["_ChangeGuard"].Size = UDim2.new(0.925000012, 0, 0.014496603, 0)
+Converted["_ChangeGuard"].Visible = false
+Converted["_ChangeGuard"].Name = "ChangeGuard"
+Converted["_ChangeGuard"].Parent = Converted["_Status1"]
+
+Converted["_UIScale22"].Parent = Converted["_ChangeGuard"]
+
+Converted["_UIStroke42"].Parent = Converted["_ChangeGuard"]
+
+Converted["_UIStroke43"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke43"].Parent = Converted["_ChangeGuard"]
+
+Converted["_UICorner23"].Parent = Converted["_ChangeGuard"]
+
+Converted["_CurrentTeam"].Font = Enum.Font.SourceSans
+Converted["_CurrentTeam"].Text = "Current Team: ???"
+Converted["_CurrentTeam"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_CurrentTeam"].TextScaled = true
+Converted["_CurrentTeam"].TextSize = 14
+Converted["_CurrentTeam"].TextWrapped = true
+Converted["_CurrentTeam"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_CurrentTeam"].BackgroundTransparency = 0.949999988079071
+Converted["_CurrentTeam"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_CurrentTeam"].BorderSizePixel = 0
+Converted["_CurrentTeam"].LayoutOrder = 4
+Converted["_CurrentTeam"].Position = UDim2.new(0.037499886, 0, 0, 0)
+Converted["_CurrentTeam"].Size = UDim2.new(0.925000012, 0, 0.0320000015, 0)
+Converted["_CurrentTeam"].Visible = false
+Converted["_CurrentTeam"].Name = "CurrentTeam"
+Converted["_CurrentTeam"].Parent = Converted["_Status1"]
+
+Converted["_UIScale23"].Parent = Converted["_CurrentTeam"]
+
+Converted["_UIStroke44"].Parent = Converted["_CurrentTeam"]
+
+Converted["_UICorner24"].Parent = Converted["_CurrentTeam"]
+
+Converted["_UIStroke45"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke45"].Parent = Converted["_CurrentTeam"]
+
+Converted["_Team"].Font = Enum.Font.SourceSansBold
+Converted["_Team"].Text = "Team"
+Converted["_Team"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Team"].TextScaled = true
+Converted["_Team"].TextSize = 14
+Converted["_Team"].TextWrapped = true
+Converted["_Team"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Team"].BackgroundTransparency = 0.949999988079071
+Converted["_Team"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Team"].BorderSizePixel = 0
+Converted["_Team"].LayoutOrder = 4
+Converted["_Team"].Position = UDim2.new(0.037499886, 0, 0, 0)
+Converted["_Team"].Size = UDim2.new(0.925000012, 0, 0.0175033994, 0)
+Converted["_Team"].Visible = false
+Converted["_Team"].Name = "Team"
+Converted["_Team"].Parent = Converted["_Status1"]
+
+Converted["_UIScale24"].Parent = Converted["_Team"]
+
+Converted["_UIStroke46"].Parent = Converted["_Team"]
+
+Converted["_UICorner25"].Parent = Converted["_Team"]
+
+Converted["_UIStroke47"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke47"].Parent = Converted["_Team"]
+
+Converted["_TimeTitle"].Font = Enum.Font.SourceSansBold
+Converted["_TimeTitle"].Text = "Time"
+Converted["_TimeTitle"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TimeTitle"].TextScaled = true
+Converted["_TimeTitle"].TextSize = 14
+Converted["_TimeTitle"].TextWrapped = true
+Converted["_TimeTitle"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TimeTitle"].BackgroundTransparency = 0.949999988079071
+Converted["_TimeTitle"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TimeTitle"].BorderSizePixel = 0
+Converted["_TimeTitle"].LayoutOrder = 1
+Converted["_TimeTitle"].Position = UDim2.new(0.037499886, 0, 0, 0)
+Converted["_TimeTitle"].Size = UDim2.new(0.925000012, 0, 0.0175033994, 0)
+Converted["_TimeTitle"].Visible = false
+Converted["_TimeTitle"].Name = "TimeTitle"
+Converted["_TimeTitle"].Parent = Converted["_Status1"]
+
+Converted["_UIScale25"].Parent = Converted["_TimeTitle"]
+
+Converted["_UIStroke48"].Parent = Converted["_TimeTitle"]
+
+Converted["_UICorner26"].Parent = Converted["_TimeTitle"]
+
+Converted["_UIStroke49"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke49"].Parent = Converted["_TimeTitle"]
+
+Converted["_CurrentEvent"].Font = Enum.Font.SourceSans
+Converted["_CurrentEvent"].Text = "Current Event: ???"
+Converted["_CurrentEvent"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_CurrentEvent"].TextScaled = true
+Converted["_CurrentEvent"].TextSize = 14
+Converted["_CurrentEvent"].TextWrapped = true
+Converted["_CurrentEvent"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_CurrentEvent"].BackgroundTransparency = 0.949999988079071
+Converted["_CurrentEvent"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_CurrentEvent"].BorderSizePixel = 0
+Converted["_CurrentEvent"].LayoutOrder = 2
+Converted["_CurrentEvent"].Position = UDim2.new(0.037499886, 0, 0, 0)
+Converted["_CurrentEvent"].Size = UDim2.new(0.925000012, 0, 0.0320000015, 0)
+Converted["_CurrentEvent"].Visible = false
+Converted["_CurrentEvent"].Name = "CurrentEvent"
+Converted["_CurrentEvent"].Parent = Converted["_Status1"]
+
+Converted["_UIScale26"].Parent = Converted["_CurrentEvent"]
+
+Converted["_UIStroke50"].Parent = Converted["_CurrentEvent"]
+
+Converted["_UICorner27"].Parent = Converted["_CurrentEvent"]
+
+Converted["_UIStroke51"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke51"].Parent = Converted["_CurrentEvent"]
+
+Converted["_Clock"].Font = Enum.Font.SourceSans
+Converted["_Clock"].Text = "Clock: ???"
+Converted["_Clock"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Clock"].TextScaled = true
+Converted["_Clock"].TextSize = 14
+Converted["_Clock"].TextWrapped = true
+Converted["_Clock"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Clock"].BackgroundTransparency = 0.949999988079071
+Converted["_Clock"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Clock"].BorderSizePixel = 0
+Converted["_Clock"].LayoutOrder = 3
+Converted["_Clock"].Position = UDim2.new(0.037499886, 0, 0, 0)
+Converted["_Clock"].Size = UDim2.new(0.925000012, 0, 0.0175033994, 0)
+Converted["_Clock"].Visible = false
+Converted["_Clock"].Name = "Clock"
+Converted["_Clock"].Parent = Converted["_Status1"]
+
+Converted["_UIScale27"].Parent = Converted["_Clock"]
+
+Converted["_UIStroke52"].Parent = Converted["_Clock"]
+
+Converted["_UICorner28"].Parent = Converted["_Clock"]
+
+Converted["_UIStroke53"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke53"].Parent = Converted["_Clock"]
+
+Converted["_Settings1"].Name = "Settings"
+Converted["_Settings1"].Parent = Converted["_Shading"]
+
+Converted["_Modifications1"].Name = "Modifications"
+Converted["_Modifications1"].Parent = Converted["_Shading"]
+
+Converted["_Visuals1"].Name = "Visuals"
+Converted["_Visuals1"].Parent = Converted["_Shading"]
+
+Converted["_PVP1"].Name = "PVP"
+Converted["_PVP1"].Parent = Converted["_Shading"]
+
+Converted["_Click"].SoundId = "rbxassetid://6042053626"
+Converted["_Click"].Name = "Click"
+Converted["_Click"].Parent = Converted["_DeesConsole"]
+
+Converted["_Select"].SoundId = "rbxassetid://452267918"
+Converted["_Select"].Name = "Select"
+Converted["_Select"].Parent = Converted["_DeesConsole"]
+
+-- Fake Module Scripts:
+
+local fake_module_scripts = {}
+
+
+-- Fake Local Scripts:
+
+local function JSGXHYZ_fake_script() -- Fake Script: StarterGui.DeesConsole.SFX
+	local script = Instance.new("LocalScript")
+	script.Name = "SFX"
+	script.Parent = Converted["_DeesConsole"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	-- Services
+	local TS = game:GetService("TweenService")
+
+	-- Variables
+	local player = game.Players.LocalPlayer
+
+	local clickSFX = script.Parent:WaitForChild("Click"):Clone()
+	clickSFX.Parent = player
+	local selectSFX = script.Parent:WaitForChild("Select"):Clone()
+	selectSFX.Parent = player
+
+	-- Functionality
+	for i, button in pairs(script.Parent:GetDescendants()) do
+		if button:IsA("TextButton") then
+			if button:FindFirstChild("Custom") then return end
+			local UIScale = button.UIScale
+			button.MouseEnter:Connect(function()
+				UIScale.Scale = 1
+				local tween = TS:Create(UIScale, TweenInfo.new(0.15, Enum.EasingStyle.Quad), {Scale = 1.05})
+				tween:Play()
+				clickSFX:Play()
+			end)
+
+			button.MouseLeave:Connect(function()
+				UIScale.Scale = 1.05
+				local tween = TS:Create(UIScale, TweenInfo.new(0.15, Enum.EasingStyle.Quad), {Scale = 1})
+				tween:Play()
+				clickSFX:Play()
+			end)
+
+			button.MouseButton1Down:Connect(function()
+				local tween = TS:Create(UIScale, TweenInfo.new(0.15, Enum.EasingStyle.Quad), {Scale = 0.95})
+				tween:Play()
+				selectSFX:Play()
+			end)
+
+			button.MouseButton1Up:Connect(function()
+				local tween = TS:Create(UIScale, TweenInfo.new(0.15, Enum.EasingStyle.Quad), {Scale = 1})
+				tween:Play()
+				clickSFX:Play()
+			end)
+		end
+	end
+end
+local function IJENDCL_fake_script() -- Fake Script: StarterGui.DeesConsole.OpenButton.Moveable
+	local script = Instance.new("LocalScript")
+	script.Name = "Moveable"
+	script.Parent = Converted["_OpenButton"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+
+	local button = script.Parent
+	local buttonDown = false
+	button.MouseButton1Down:Connect(function()
+		buttonDown = true
+		while buttonDown do
+			button.Position = UDim2.new(0, mouse.X, 0, mouse.Y)
+			task.wait()
+		end
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		buttonDown = false
+	end)
+end
+local function ZXDLW_fake_script() -- Fake Script: StarterGui.DeesConsole.OpenButton.Functionality
+	local script = Instance.new("LocalScript")
+	script.Name = "Functionality"
+	script.Parent = Converted["_OpenButton"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	-- Services
+	local TS = game:GetService("TweenService")
+	local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+
+	-- Variables
+	local GUI = script.Parent.Parent:WaitForChild("Background")
+	local button = script.Parent
+
+	-- Functionality
+	button.MouseButton1Click:Connect(function()
+		if GUI.Size == UDim2.new(0,0,0,0) then
+			GUI.Visible = true
+			local tween = TS:Create(GUI, tweenInfo, {Size = UDim2.new(0.422, 0, 0.496, 0)})
+			tween:Play()
+		else
+			local tween = TS:Create(GUI, tweenInfo, {Size = UDim2.new(0, 0, 0, 0)})
+			tween:Play()
+
+			task.delay(0.9, function()
+				GUI.Visible = false
+			end)
+		end
+	end)
+end
+local function DHPUIOM_fake_script() -- Fake Script: StarterGui.DeesConsole.Background.CloseGUI.Functionality
+	local script = Instance.new("LocalScript")
+	script.Name = "Functionality"
+	script.Parent = Converted["_CloseGUI"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	-- Services
+	local TS = game:GetService("TweenService")
+	local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+
+	-- Variables
+	local GUI = script.Parent.Parent
+	local button = script.Parent
+
+	-- Functionality
+	button.MouseButton1Click:Connect(function()
+		local tween = TS:Create(GUI, tweenInfo, {Size = UDim2.new(0, 0, 0, 0)})
+		tween:Play()
+
+		task.delay(0.9, function()
+			GUI.Visible = false
+		end)
+	end)
+end
+local function EUVLOK_fake_script() -- Fake Script: StarterGui.DeesConsole.Background.Moveable
+	local script = Instance.new("LocalScript")
+	script.Name = "Moveable"
+	script.Parent = Converted["_Background"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+
+	local button = script.Parent
+	local buttonDown = false
+	button.MouseButton1Down:Connect(function()
+		buttonDown = true
+		while buttonDown do
+			button.Position = UDim2.new(0, mouse.X, 0, mouse.Y)
+			task.wait()
+		end
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		buttonDown = false
+	end)
+end
+local function YXXK_fake_script() -- Fake Script: StarterGui.DeesConsole.Background.Shading.SectionsHolder.Functionality
+	local script = Instance.new("LocalScript")
+	script.Name = "Functionality"
+	script.Parent = Converted["_SectionsHolder"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	-- Variables
+	local mainFrame = script.Parent.Parent
+	local functionFrame = mainFrame:WaitForChild("FunctionFrame").GUIHolder
+
+	local GUIHolder = script.Parent
+	for i, button in pairs(GUIHolder:GetChildren()) do
+		if button:IsA("TextButton") or button:IsA("ImageButton") then
+			local sectionName = button.Name
+			button.MouseButton1Click:Connect(function()
+				-- Reset function GUI
+				for i, child in pairs(functionFrame:GetChildren()) do
+					if child:IsA("UIListLayout") == false then
+						child:Destroy()
+					end
+				end
+
+				if mainFrame:FindFirstChild(sectionName) and mainFrame:FindFirstChild(sectionName):IsA("Folder") then
+					local GUIFolder = mainFrame:FindFirstChild(sectionName)
+					for i, child in pairs(GUIFolder:GetChildren()) do
+						print(child)
+						local clone = child:Clone()
+						clone.Parent = functionFrame
+						clone.Visible = true
+						task.wait()
+					end
+				end
+			end)
+		end
+	end
+end
+local function ZLPL_fake_script() -- Fake Script: StarterGui.DeesConsole.Background.Shading.Player.TeleportPrison.TeleportPrison
+	local script = Instance.new("LocalScript")
+	script.Name = "TeleportPrison"
+	script.Parent = Converted["_TeleportPrison"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	-- Variables
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:FindFirstChildOfClass("Humanoid")
+	local HRP = character:WaitForChild("HumanoidRootPart")
+
+	-- Functionality
+	local button = script.Parent
+	local targetCFrame = CFrame.new(920, 100, 2449, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	button.MouseButton1Click:Connect(function()
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		task.wait(0.35)
+		HRP.CFrame = targetCFrame
+	end)
+
+	-- Services
+	local TS = game:GetService("TweenService")
+	local info = TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
+	local colour = Color3.new(1, 0.4, 0)
+	button.MouseEnter:Connect(function()
+		local colourTween = TS:Create(button, info, {BackgroundColor3 = colour, BackgroundTransparency = 0})
+		colourTween:Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		local colourTween = TS:Create(button, info, {BackgroundColor3 = Color3.new(1,1,1), BackgroundTransparency = 0.95})
+		colourTween:Play()
+	end)
+end
+local function MTGHS_fake_script() -- Fake Script: StarterGui.DeesConsole.Background.Shading.Player.TeleportCafeteria.TeleportCafeteria
+	local script = Instance.new("LocalScript")
+	script.Name = "TeleportCafeteria"
+	script.Parent = Converted["_TeleportCafeteria"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	-- Variables
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:FindFirstChildOfClass("Humanoid")
+	local HRP = character:WaitForChild("HumanoidRootPart")
+
+	local button = script.Parent
+	local targetCFrame = CFrame.new(920, 100, 2291, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	button.MouseButton1Click:Connect(function()
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		task.wait(0.35)
+		HRP.CFrame = targetCFrame
+	end)
+
+	-- Services
+	local TS = game:GetService("TweenService")
+	local info = TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
+	local colour = Color3.new(1, 0.4, 0)
+	button.MouseEnter:Connect(function()
+		local colourTween = TS:Create(button, info, {BackgroundColor3 = colour, BackgroundTransparency = 0})
+		colourTween:Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		local colourTween = TS:Create(button, info, {BackgroundColor3 = Color3.new(1,1,1), BackgroundTransparency = 0.95})
+		colourTween:Play()
+	end)
+end
+local function VANRP_fake_script() -- Fake Script: StarterGui.DeesConsole.Background.Shading.Player.TeleportCriminal.TeleportCriminal
+	local script = Instance.new("LocalScript")
+	script.Name = "TeleportCriminal"
+	script.Parent = Converted["_TeleportCriminal"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	-- Variables
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:FindFirstChildOfClass("Humanoid")
+	local HRP = character:WaitForChild("HumanoidRootPart")
+
+	local button = script.Parent
+	local targetCFrame = CFrame.new(831, 100, 2312, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	button.MouseButton1Click:Connect(function()
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		task.wait(0.35)
+		HRP.CFrame = targetCFrame
+	end)
+
+	-- Services
+	local TS = game:GetService("TweenService")
+	local info = TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
+	local colour = Color3.new(1, 0, 0)
+	button.MouseEnter:Connect(function()
+		local colourTween = TS:Create(button, info, {BackgroundColor3 = colour, BackgroundTransparency = 0})
+		colourTween:Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		local colourTween = TS:Create(button, info, {BackgroundColor3 = Color3.new(1,1,1), BackgroundTransparency = 0.95})
+		colourTween:Play()
+	end)
+end
+local function VFIE_fake_script() -- Fake Script: StarterGui.DeesConsole.Background.Shading.Player.TeleportYard.TeleportYard
+	local script = Instance.new("LocalScript")
+	script.Name = "TeleportYard"
+	script.Parent = Converted["_TeleportYard"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	-- Variables
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:FindFirstChildOfClass("Humanoid")
+	local HRP = character:WaitForChild("HumanoidRootPart")
+
+	local button = script.Parent
+	local targetCFrame = CFrame.new(780, 98, 2569, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+	button.MouseButton1Click:Connect(function()
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		task.wait(0.35)
+		HRP.CFrame = targetCFrame
+	end)
+
+	-- Services
+	local TS = game:GetService("TweenService")
+	local info = TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
+	local colour = Color3.new(1, 0.4, 0)
+	button.MouseEnter:Connect(function()
+		local colourTween = TS:Create(button, info, {BackgroundColor3 = colour, BackgroundTransparency = 0})
+		colourTween:Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		local colourTween = TS:Create(button, info, {BackgroundColor3 = Color3.new(1,1,1), BackgroundTransparency = 0.95})
+		colourTween:Play()
+	end)
+end
+local function JKNXT_fake_script() -- Fake Script: StarterGui.DeesConsole.Background.Shading.Player.TeleportGuard.TeleportGuard
+	local script = Instance.new("LocalScript")
+	script.Name = "TeleportGuard"
+	script.Parent = Converted["_TeleportGuard"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	-- Variables
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:FindFirstChildOfClass("Humanoid")
+	local HRP = character:WaitForChild("HumanoidRootPart")
+
+	local button = script.Parent
+	local targetCFrame = CFrame.new(831, 100, 2312, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	button.MouseButton1Click:Connect(function()
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		task.wait(0.35)
+		HRP.CFrame = targetCFrame
+	end)
+
+	-- Services
+	local TS = game:GetService("TweenService")
+	local info = TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
+	local colour = Color3.new(0, 0, 1)
+	button.MouseEnter:Connect(function()
+		local colourTween = TS:Create(button, info, {BackgroundColor3 = colour, BackgroundTransparency = 0})
+		colourTween:Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		local colourTween = TS:Create(button, info, {BackgroundColor3 = Color3.new(1,1,1), BackgroundTransparency = 0.95})
+		colourTween:Play()
+	end)
+end
+local function MCLEPWT_fake_script() -- Fake Script: StarterGui.DeesConsole.Background.Shading.Player.JumpHeightChanger.JumpHeight
+	local script = Instance.new("LocalScript")
+	script.Name = "JumpHeight"
+	script.Parent = Converted["_JumpHeightChanger"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	-- Variables
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:FindFirstChildOfClass("Humanoid")
+
+	local textBox = script.Parent
+	local jumpHeight = 7.2
+
+	-- Speed loop
+	local function GiveHops()
+		repeat
+			jumpHeight = tonumber(textBox.Text)
+			if jumpHeight and textBox.Text then
+				humanoid.JumpHeight = jumpHeight
+				humanoid.JumpPower = jumpHeight * 7
+			end
+			task.wait()
+		until false
+	end
+	GiveHops()
+end
+local function WVERDA_fake_script() -- Fake Script: StarterGui.DeesConsole.Background.Shading.Player.WalkSpeedChanger.WalkSpeed
+	local script = Instance.new("LocalScript")
+	script.Name = "WalkSpeed"
+	script.Parent = Converted["_WalkSpeedChanger"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	-- Variables
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:FindFirstChildOfClass("Humanoid")
+
+	local textBox = script.Parent
+	local speed = 16
+
+	-- Speed loop
+	local function GiveSpeed()
+		repeat
+			speed = tonumber(textBox.Text)
+			if speed and textBox.Text then
+				humanoid.WalkSpeed = speed
+			end
+			task.wait()
+		until false
+	end
+	GiveSpeed()
+end
+local function KBTKL_fake_script() -- Fake Script: StarterGui.DeesConsole.Background.Shading.Status.ChangePrisoner.TeamPrisoner
+	local script = Instance.new("LocalScript")
+	script.Name = "TeamPrisoner"
+	script.Parent = Converted["_ChangePrisoner"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	-- Variables
+	local player = game.Players.LocalPlayer
+	local button = script.Parent
+	button.MouseButton1Click:Connect(function()
+		workspace.Remote.TeamEvent:FireServer("Bright red")
+	end)
+
+	-- Services
+	local TS = game:GetService("TweenService")
+	local info = TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
+	local colour = Color3.new(0, 0, 1)
+	button.MouseEnter:Connect(function()
+		local colourTween = TS:Create(button, info, {BackgroundColor3 = colour, BackgroundTransparency = 0})
+		colourTween:Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		local colourTween = TS:Create(button, info, {BackgroundColor3 = Color3.new(1,1,1), BackgroundTransparency = 0.95})
+		colourTween:Play()
+	end)
+end
+local function UENTQC_fake_script() -- Fake Script: StarterGui.DeesConsole.Background.Shading.Status.ChangeCriminal.TeamCriminal
+	local script = Instance.new("LocalScript")
+	script.Name = "TeamCriminal"
+	script.Parent = Converted["_ChangeCriminal"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	-- Variables
+	local player = game.Players.LocalPlayer
+	local button = script.Parent
+	button.MouseButton1Click:Connect(function()
+		workspace.Remote.TeamEvent:FireServer("Really red")
+	end)
+
+	-- Services
+	local TS = game:GetService("TweenService")
+	local info = TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
+	local colour = Color3.new(0, 0, 1)
+	button.MouseEnter:Connect(function()
+		local colourTween = TS:Create(button, info, {BackgroundColor3 = colour, BackgroundTransparency = 0})
+		colourTween:Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		local colourTween = TS:Create(button, info, {BackgroundColor3 = Color3.new(1,1,1), BackgroundTransparency = 0.95})
+		colourTween:Play()
+	end)
+end
+local function JBWE_fake_script() -- Fake Script: StarterGui.DeesConsole.Background.Shading.Status.ChangeGuard.TeamGuard
+	local script = Instance.new("LocalScript")
+	script.Name = "TeamGuard"
+	script.Parent = Converted["_ChangeGuard"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	-- Variables
+	local player = game.Players.LocalPlayer
+	local button = script.Parent
+	button.MouseButton1Click:Connect(function()
+		workspace.Remote.TeamEvent:FireServer("Bright blue")
+	end)
+
+	-- Services
+	local TS = game:GetService("TweenService")
+	local info = TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
+	local colour = Color3.new(0, 0, 1)
+	button.MouseEnter:Connect(function()
+		local colourTween = TS:Create(button, info, {BackgroundColor3 = colour, BackgroundTransparency = 0})
+		colourTween:Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		local colourTween = TS:Create(button, info, {BackgroundColor3 = Color3.new(1,1,1), BackgroundTransparency = 0.95})
+		colourTween:Play()
+	end)
+end
+
+coroutine.wrap(JSGXHYZ_fake_script)()
+coroutine.wrap(IJENDCL_fake_script)()
+coroutine.wrap(ZXDLW_fake_script)()
+coroutine.wrap(DHPUIOM_fake_script)()
+coroutine.wrap(EUVLOK_fake_script)()
+coroutine.wrap(YXXK_fake_script)()
+coroutine.wrap(ZLPL_fake_script)()
+coroutine.wrap(MTGHS_fake_script)()
+coroutine.wrap(VANRP_fake_script)()
+coroutine.wrap(VFIE_fake_script)()
+coroutine.wrap(JKNXT_fake_script)()
+coroutine.wrap(MCLEPWT_fake_script)()
+coroutine.wrap(WVERDA_fake_script)()
+coroutine.wrap(KBTKL_fake_script)()
+coroutine.wrap(UENTQC_fake_script)()
+coroutine.wrap(JBWE_fake_script)()
