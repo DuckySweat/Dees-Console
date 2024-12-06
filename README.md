@@ -1,2 +1,3 @@
 # Dees-Console
-Sigma roblox prison life
+Thank you for using my console!
+I made it all myself, hope you enjoy it.
